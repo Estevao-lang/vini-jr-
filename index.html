@@ -1,37 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Vini Jr</title>
+    <title>Formulário e Imagens em HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
-   <header>
-    <nav>
-       
-                    
-        <img src="./imagens/remove_vini.png" alt="Vini jr" width="50">
+    <div class="container">
+        <h1>Entendendo Formulários e Imagens em HTML</h1>
 
-        <div class="listanav">
+        <h2>Formulário de Contato</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="country">País:</label>
+                <select id="country" name="country">
+                    <option value="br">Brasil</option>
+                    <option value="us">Estados Unidos</option>
+                    <option value="uk">Reino Unido</option>
+                    <option value="de">Alemanha</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
 
-        <a href="https://www.instagram.com/vinijr/">
-             Instagram 
-        </a>
-
-        <a href="https://www.instagram.com/unesco/">
-            Unesco
-        </a>
-
-        <a href="https://institutovinijr.org.br">
-            Instituto Vini Jr
-        </a>
-
-        <a href="https://www.instagram.com/loudgg/">
-            Loudgg
-        </a>
-</div>
-    </nav>
-   </header> 
+        <h2>Exemplo de Imagem em HTML</h2>
+        <p>Veja abaixo um exemplo de como incluir uma imagem em sua página HTML:</p>
+        <div class="form-group">
+            <img src="https://via.placeholder.com/600x400" alt="Exemplo de Imagem">
+        </div>
+        <p>Ao utilizar imagens, é importante respeitar os direitos autorais. Certifique-se de que possui permissão para usar qualquer imagem que não seja de sua autoria ou que esteja sob uma licença que permita seu uso.</p>
+    </div>
 </body>
 </html>
